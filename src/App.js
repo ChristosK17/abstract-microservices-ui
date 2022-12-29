@@ -171,7 +171,7 @@ function GetMeasurementByTimestamp(props) {
 
 }
 
-export default function BasicTabs() {
+export default function AbstractMicroservices() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -181,10 +181,7 @@ export default function BasicTabs() {
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-        >
+        <Tabs value={value} onChange={handleChange}>
           <Tab label="Get Sensor" />
           <Tab label="Post Sensor" />
           <Tab label="Get Measurements" />
